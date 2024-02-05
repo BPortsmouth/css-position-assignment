@@ -1,10 +1,12 @@
 body {
+    height: 3550px;
     font-family: 'Poppins', sans-serif;
     color: #544837;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    
 }
 
 header, main, footer{
@@ -17,6 +19,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 90%;
 }
 
 h1, h2, h3, h4 {
@@ -53,6 +56,10 @@ h3 {
     justify-content: space-between;
 }
 
+.navigation a{
+    text-decoration: none;
+    color: inherit;
+}
 .navigation__header {
     font-size: 14px;
     transform:translateX(35px);
@@ -62,7 +69,6 @@ h3 {
     display: inline;
 }
 .navigation__header a {
-    text-decoration: none;
     margin: 4px;
     padding: 10px;
 }
@@ -225,4 +231,37 @@ h4 {
 
 .checklist p{
     max-width: 365px;
+}
+
+hr {
+    margin: 20px 0px;
+}
+footer {
+    height: 10%;
+}
+.useful-links {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    transform: translateY(100px);
+}
+
+
+.email-entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.email-entry__input {
+    max-width: 325px;
+    width: 100%;
+    height: 48px;
+    border: #BCD0E5 solid 1px;
+    border-radius: 4px;
+}
+
+.button__footer {
+    height: 40px;
+    width: 130px;
 }
